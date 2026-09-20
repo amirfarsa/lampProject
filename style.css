@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    background-color: #000;
+    font-family: Arial, sans-serif;
+}
+
+.lamp-container {
+    width: 450px;
+    min-height: 450px;
+    margin: 64px auto;
+    padding: 40px;
+    text-align: center;
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+.lamp-container.lamp-on {
+    background-color: #332d10;
+
+    box-shadow:
+        0 0 20px #ffd000,
+        0 0 50px #ffd000,
+        0 0 100px #ffb700,
+        inset 0 0 50px rgba(255, 208, 0, 0.3);
+}
+.offPic {
+    width: 250px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+button {
+    padding: 15px 35px;
+    border: none;
+    border-radius: 12px;
+    background-color: #f5c400;
+    color: #111;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(245, 196, 0, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
+}
